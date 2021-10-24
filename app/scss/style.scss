@@ -1,0 +1,488 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header{
+    margin-bottom: 115px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 45px 0 84px;
+    }
+    &__navigation{
+        display: flex;
+        align-items: center;
+    }
+    &__btn{
+        margin-left: 26px;
+        font-weight: 600;
+        line-height: 21px;
+        color: #fff;
+        padding: 10px 32px;
+        background-color: #0CA941;
+        border-radius: 6px;
+    }
+    &__content{
+        display: flex;
+        position: relative;
+    }
+    &__box{
+        max-width: 617px;
+    }
+    &__title{
+        font-family: 'Fredoka One', sans-serif;
+        font-size: 72px;
+        line-height: 106%;
+        color: #374A3D;
+        margin: 97px 0 39px;
+    }
+    &__title span{
+        color: #0CA941;
+    }
+    &__subtitle{
+        color: #707070;
+        max-width: 535px;
+        margin-bottom: 40px;
+    }
+    &__image{
+        position: absolute;
+        right: -150px;
+    }
+    &__shop-box{
+        display: flex;
+    }
+    &__shop-btn{
+        font-weight: 600;
+        line-height: 100%;
+        color: #374A3D;
+        text-align: center;
+        padding: 25px 60px 25px 36px;
+        border: 2px solid #0CA941;
+        border-radius: 100%;
+        position: relative;
+    }
+    &__shop-btn::after{
+        content: '';
+        position: absolute;
+        background-image: url(../images/header__shop-line.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        width: 21px;
+        height: 13px;
+        right: 30px;
+        top: 27px;
+    }
+    &__shop-curve{
+        position: absolute;
+        left: 23%;
+        bottom: -37px;
+    }
+    &__shop-cactus{
+        position: absolute;
+        left: 33%;
+        top: 100%;
+    }
+    &__bottom{
+        padding-top: 269px;
+    }
+    &__bottom-box{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 23px 19px 138px -45px rgba(12, 169, 65, 0.13);
+        border-radius: 28px;
+        position: relative;
+        padding: 49px 40px 40px 152px;
+    }
+    &__bottom-img{
+        position: absolute;
+        right: 88%;
+        bottom: -18%;
+    }
+    &__bottom-item{
+        margin-right: 84px;
+    }
+    &__bottom-item:nth-child(1){
+        max-width: 311px;
+    }
+    &__bottom-item:nth-last-child(1){
+        margin-right: 0;
+    }
+    &__bottom-title{
+        font-family: 'Fredoka One', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 133%;
+        color: #374A3D;
+        margin-bottom: 9px;
+    }
+    &__bottom-text{
+        font-size: 16px;
+        line-height: 162%;
+        color: #5B7262;
+    }
+    &__bottom-num{
+        position: relative;
+        font-family: 'Gilroy-Extrabold';
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 70%;
+        color: #0CA941;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+    &__bottom-num::before{
+        content: '';
+        position: absolute;
+        background-image: url(../images/header__bottom-numbg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 110px;
+        height: 95px;
+        left: -15px;
+        bottom: -25px;
+        z-index: -1;
+    }
+    &__bottom-descr{
+        margin-top: 15px;
+        font-weight: 600;
+    }
+}
+.menu{
+    &__list{
+        display: flex;
+    }
+    &__item{
+        margin: 0 30px;
+    }
+    &__item-link{
+        font-weight: 600;
+        line-height: 21px;
+        color: #1D3B53;
+    }
+}
+.professional{
+    margin-bottom: 89px;
+    &__inner{
+        display: flex;
+    }
+    &__content{
+        max-width: 458px;
+        margin-left: 56px;
+        padding-top: 49px;
+    }
+    &__title{
+        margin-bottom: 31px;
+    }
+    &__text{
+        margin-bottom: 40px;
+    }
+    &__box{
+        position: relative;
+    }
+    &__read-btn{
+        font-weight: 600;
+        line-height: 100%;
+        color: #374A3D;
+        text-align: center;
+        padding: 25px 60px 25px 36px;
+        border: 2px solid #0CA941;
+        border-radius: 100%;
+        position: relative;
+    }
+    &__read-btn::after{
+        content: '';
+        position: absolute;
+        background-image: url(../images/header__shop-line.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        width: 21px;
+        height: 13px;
+        right: 30px;
+        top: 31px;
+    }
+    &__read-curve{
+        position: absolute;
+        left: 50%;
+        bottom: -55px;
+    }
+}
+.service{
+    margin-bottom: 170px;
+    &__inner{
+        display: flex;
+        align-items: center;
+    }
+    &__content{
+        max-width: 458px;
+        margin-right: 106px;
+    }
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__text{
+        margin-bottom: 40px;
+    }
+    &__text:nth-child(3){
+        margin-bottom: 65px;
+    }
+    &__items{
+        position: relative;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-flow: column wrap-reverse;
+        justify-content:center;
+        height: 650px;
+        width: 607px;
+        z-index: 1;
+    }
+    &__items::before{
+        content: '';
+        position: absolute;
+        width: 407px;
+        height: 400px;
+        background-image: url(../images/service__item-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 40%;
+        z-index: -1;
+    }
+    &__item{
+        max-width: 268px;
+        background-color: #fff;
+        text-align: center;
+        padding: 28px 25px 19px 26px;
+        box-shadow: 8px 9px 42px rgba(12, 169, 65, 0.12);
+        border-radius: 10px;
+    }
+    &__item:nth-child(1){
+        margin-bottom: 30px;
+    }
+    &__item-title{
+        font-family: 'Fredoka One', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 108%;
+        color: #374A3D;
+        margin-bottom: 14px;
+    }
+    &__item-text{
+        font-size: 16px;
+        line-height: 150%;
+    }
+    &__item-img{
+        display: inline-block;
+        width: 105px;
+        height: 97px;
+    }
+}
+.rating{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    line-height: 0.75;
+    &__body{
+        position: relative;
+    }
+    &__body::before{
+        content: '★★★★★';
+        display: block;
+    }
+    &__active{
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    &__active::before{
+        content: '★★★★★';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        color: #FFD700;
+    }
+    &__items{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    &__item{
+        flex: 0 0 12%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+    &__value{
+        font-size: 18px;
+        line-height: 178%;
+        color: #678570;
+        padding: 0 0 0 12px;
+    }
+}
+.market{
+    margin-bottom: 134px;
+    text-align: center;
+    &__title{
+        margin-bottom: 31px;
+    }
+    &__text{
+        max-width: 531px;
+        display: inline-block;
+        margin-bottom: 51px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        border: 0.5px solid rgba(0, 0, 0, 0.36);
+        border-radius: 37px;
+        padding: 31px 36px 30px;
+        background-color: #fff;
+        width: 360px;
+    }
+    &__item-img{
+        margin: 0 auto;
+        margin-bottom: 14px;
+    }
+    &__item-title{
+        font-family: 'Fredoka One', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 125%;
+        color: #374A3D;
+        margin-bottom: 4px;
+    }
+    &__item-box{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item-pricetext{
+        font-size: 12px;
+    }
+    &__item-pricenum{
+        font-family: 'Fredoka One', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #0CA941;
+    }
+    &__item-btn{
+        font-size: 16px;
+        line-height: 150%;
+        color: #678570;
+        background-color: #fff;
+        border: 0.5px solid rgba(55, 74, 61, 0.36);
+        border-radius: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+}
+.idea{
+    margin-bottom: 129px;
+    &__inner{
+        background-color: #F8F8F8;
+        border-radius: 19px;
+        padding: 96px 256px 132px;
+    }
+    &__title{
+        margin-bottom: 31px;
+    }
+    &__text{
+        margin-bottom: 50px;
+    }
+    &__form{
+        display: flex;
+    }
+    &__form-input{
+        width: 100%;
+        padding: 25px 34px;
+        border: 1px solid #0CA941;
+        border-radius: 10px;
+    }
+    &__form-input::placeholder{
+        font-size: 18px;
+        line-height: 178%;
+        color: #C4C4C4;
+    }
+    &__form-btn{
+        color: #fff;
+        padding: 25px 71px;
+        background-color: #0CA941;
+        border: 1px solid #0CA941;
+        border-radius: 10px;
+        margin-left: -15px;
+        cursor: pointer;
+    }
+}
+.footer{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 86px;
+    }
+    &__content{
+        max-width: 301px;
+    }
+    &__logo{
+        margin-bottom: 20px;
+    }
+    &__text{
+        margin-bottom: 35px;
+    }
+    &__social{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 162px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 145%;
+        color: #374A3D;
+        margin-bottom: 25px;
+    }
+    &__company-item,
+    &__support-item{
+        margin-bottom: 5px;
+    }
+    &__company-link,
+    &__support-link,
+    &__contact-maillink,
+    &__contact-phonelink{
+        font-family: 'Gilroy-Medium';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 178%;
+        color: #678570;
+    }
+    &__contact{
+        max-width: 207px;
+    }
+    &__contact-text,
+    &__contact-mail{
+        margin-bottom: 15px;
+    }
+    &__contact-mail,
+    &__contact-phone{
+        font-weight: 700;
+    }
+    &__contact-phone{
+        max-width: 130px;
+    }
+}

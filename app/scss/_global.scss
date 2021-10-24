@@ -1,0 +1,44 @@
+html,
+body {
+	height: 100%;
+	font-family: 'Gilroy-Medium';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 178%;
+	color: #678570;
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title{
+	font-family: 'Fredoka One', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 122%;
+	color: #374A3D;
+}
+
+
+
+
